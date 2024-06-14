@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("weatherBAckground.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 800px;
+    height: auto;
+    text-align: center;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  }
+  input {
+    width: calc(90% - 16px);
+    padding: 8px;
+    color: black;
+    border: 1px solid #733fdd;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  }
+  input:focus{
+    -fx-prompt-text-fill: none;
+    color: black;
+  }
+  .btn {
+    margin: 18px 0;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: #733fdd;
+    border: 1px solid #733fdd;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  }
+  .btn:hover {
+    background-color: #733fdd;
+    color: white;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  #weather-icon {
+    width: 200px;
+    height: 200px;
+    margin: -50px auto -50px auto;
+    display: none;
+  }
+  #weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+  }
+
+  #weather-info .partition p {
+    margin: 10px 100px;
+    align-items: start;
+    text-align: left;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  #weather-info .partition span {
+    font-size: 90px;
+
+  }
+  
+  #hourly-forecast {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    padding: 0 10px;
+    margin: 20px 0 30px 0;
+  }
+  
+  .hourly-items {
+    flex: 0 0 auto;
+    padding: 0.2px;
+    width: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hourly-items img {
+    width: 50px; /* Adjusted size */
+    height: auto;
+    margin-bottom: 5px;
+  }
+  
+  .hourly-items div {
+    display: flex;
+    padding: 0.2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hourly-items div span {
+    margin: 0.1rem 0;
+  }
+  
+  #hourly-heading {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  body {
+    background-color: #5d3fd3;
+    color: white;
+  }
+  
+  .hourly-forecast::-webkit-scrollbar {
+    display: none;
+  }
+  
